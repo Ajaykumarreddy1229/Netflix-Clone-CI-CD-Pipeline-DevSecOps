@@ -1,0 +1,8 @@
+
+sudo chmod 777 /var/run/docker.sock
+
+systemctl daemon-reload
+
+systemctl restart docker.service
+
+docker start sonar
