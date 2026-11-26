@@ -1,0 +1,12 @@
+
+aws eks update-kubeconfig --name EKS_CLUSTER --region ap-south-1
+
+cd
+
+cat .kube/config
+
+kubectl get nodes
+
+kubectl get all
+
+kubectl get svc
