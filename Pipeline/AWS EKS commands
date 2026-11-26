@@ -1,0 +1,6 @@
+
+aws eks list-clusters --region ap-south-1
+
+aws eks update-kubeconfig --region ap-south-1 --name EKS_CLUSTER
+
+kubectl get nodes
