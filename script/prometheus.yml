@@ -1,0 +1,8 @@
+#Jenkins monitoring configuration
+
+#Add this job under scrape_configs in /etc/prometheus/prometheus.yml, as provided in your notes.
+
+- job_name: 'jenkins'
+  metrics_path: '/prometheus'
+  static_configs:
+    - targets: ['<jenkins-ip>:8080']
